@@ -1,16 +1,47 @@
 [
   {
     "id": 1,
-    "name": "Perfume",
-    "desc": "Miguel Rousseouf",
-    "value": "100.00",
-    "image": "https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/volarium/catalog/produtos/volarium/perfume/perfume-feminino/perfume-feminino-ch-tradicional-importado-original.jpg"
+    "name": "Sol Vermelho",
+    "desc": "Amado Batista",
+    "value": "50.00",
+    "image": "https://images-americanas.b2w.io/produtos/3230253054/imagens/cd-amado-batista-sol-vermelho/3230253062_1_large.jpg",
+    "status": true,
+    "category": "MPB"
   },
   {
     "id": 2,
-    "name": "Colar",
-    "desc": "Jand Karno em perolas",
-    "value": "2200.00",
-    "image": "https://cdn.awsli.com.br/600x450/1537/1537341/produto/152389745/01e29e7fcc.jpg"
+    "name": "Rock Bravo Chegou Para Matar",
+    "desc": "Leo Canhoto e Robertinho",
+    "value": "79.99",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/6b/eb/89/6beb89e2-00bb-a63d-0420-9fbdbe3d84c0/886446883762.jpg/1200x1200bb.jpg",
+    "status": true,
+    "category": "Sertanejo"
+  },
+  {
+    "id": 3,
+    "name": "Reign in Blood",
+    "desc": "Slayer",
+    "value": "0.12",
+    "image": "https://upload.wikimedia.org/wikipedia/pt/1/13/Reign_in_blood_-_slayer_-_1986.jpg",
+    "status": false,
+    "category": "Rock"
+  },
+  {
+    "id": 4,
+    "name": "Rogerio",
+    "desc": "Supercombo",
+    "value": "39.99",
+    "image": "https://i.scdn.co/image/ab67616d0000b273efc2472ca1db26dd75bc792c",
+    "status": false,
+    "category": "Rock"
+  },
+  {
+    "id": 5,
+    "name": "Bohemian Rhapsody: The Original Soundtrack",
+    "desc": "Queen",
+    "value": "64.99",
+    "image": "https://m.media-amazon.com/images/I/61VWSXTDFfL._UF1000,1000_QL80_.jpg",
+    "status": true,
+    "category": "Pop"
   }
 ]
