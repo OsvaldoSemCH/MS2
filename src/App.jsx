@@ -3,6 +3,8 @@ import { Card } from './components/Card'
 import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
+import HeaderButtons from './components/HeaderButtons'
+
 
 function App() {
   const [show, setShow] = useState("")
@@ -31,7 +33,7 @@ function App() {
       <button onClick={() => setShow("api")}>API</button>
       <button onClick={() => setShow("map")}>Mapa</button>
     </div>
-    <div  className={style.wrapPage}>
+    <div className={style.wrapPage}>
       <h1>Exercícios de manutenção</h1>
      {show === "prod" &&
         <>

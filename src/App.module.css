@@ -1,13 +1,18 @@
-.wrapBtns {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1vw;
+.wrapBtns
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    background-color: #242424;
 }
 
 .wrapPage {
+  margin-top: 50px;
   width: 100%;
   height: auto;
   display: flex;
