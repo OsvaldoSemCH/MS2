@@ -4,6 +4,7 @@ import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import { APICard } from './components/APICard'
 import { APIModal } from './components/APIModal'
+import { SenaiMap } from './components/Map'
 import style from './App.module.css'
 import HeaderButtons from './components/HeaderButtons'
 
@@ -100,11 +101,9 @@ function App() {
       }
      {show === "map" &&
         <>
-      <h2>Mapa</h2>
-          <div>
-              mapa aqui
-          </div>
-         </>
+          <h2>Mapa</h2>
+          <SenaiMap/>
+        </>
       }
     </div>
     </>
