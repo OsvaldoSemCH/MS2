@@ -4,7 +4,7 @@
     "name": "Sol Vermelho",
     "desc": "Amado Batista",
     "value": "50.00",
-    "image": "https://images-americanas.b2w.io/produtos/3230253054/imagens/cd-amado-batista-sol-vermelho/3230253062_1_large.jpg",
+    "image": "../../src/assets/Amado Batista - Sol Vermelho.webp",
     "status": true,
     "category": "MPB"
   },
@@ -13,7 +13,7 @@
     "name": "Rock Bravo Chegou Para Matar",
     "desc": "Leo Canhoto e Robertinho",
     "value": "79.99",
-    "image": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/6b/eb/89/6beb89e2-00bb-a63d-0420-9fbdbe3d84c0/886446883762.jpg/1200x1200bb.jpg",
+    "image": "../../src/assets/Leo Canhoto e Robertinho - Rock Bravo Chegou Para Matar.jpg",
     "status": true,
     "category": "Sertanejo"
   },
@@ -22,7 +22,7 @@
     "name": "Reign in Blood",
     "desc": "Slayer",
     "value": "0.12",
-    "image": "https://upload.wikimedia.org/wikipedia/pt/1/13/Reign_in_blood_-_slayer_-_1986.jpg",
+    "image": "../../src/assets/Slayer - Reign in Blood.jpg",
     "status": false,
     "category": "Rock"
   },
@@ -31,7 +31,7 @@
     "name": "Rogerio",
     "desc": "Supercombo",
     "value": "39.99",
-    "image": "https://i.scdn.co/image/ab67616d0000b273efc2472ca1db26dd75bc792c",
+    "image": "../../src/assets/SuperCombo - Rogerio.jpg",
     "status": false,
     "category": "Rock"
   },
@@ -40,7 +40,7 @@
     "name": "Bohemian Rhapsody: The Original Soundtrack",
     "desc": "Queen",
     "value": "64.99",
-    "image": "https://m.media-amazon.com/images/I/61VWSXTDFfL._UF1000,1000_QL80_.jpg",
+    "image": "../../src/assets/Queen - Bohemian Rhapsody.jpg",
     "status": true,
     "category": "Pop"
   }
