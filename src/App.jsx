@@ -41,7 +41,15 @@ function App() {
             <div>
             {produtos.map((item) => {
               return(
-                <Card name={item.name} desc={item.desc} value={item.value} image={item.image} key={item.id}/>
+                <Card
+                  name={item.name}
+                  desc={item.desc}
+                  value={item.value}
+                  image={item.image} 
+                  key={item.id} 
+                  status={item.status} 
+                  category={item.category}
+                />
               )
              })}
             </div>
