@@ -8,20 +8,22 @@ import HeaderButtons from './components/HeaderButtons'
 
 
 function App() {
-  const [show, setShow] = useState("")
-  const [data, setData] = useState([])
-  const [page, setPage] = useState("")
-
+  const [show, setShow] = useState("");
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState("");
+  const [found, setFound] = useState(true);
 
   useEffect(() => {
     api.get(`/character/?page=${page}`).then((response) => {
       if(!response.data.results){
-        console.log("Vazio")
+        setFound(false);
+      }else{
+        setFound(true);
       }
       setData(response.data.results)
     }).catch((error) => {
       if(error.response.status === 404){
-        console.log("Esta pagina nao contem este personagem")
+        setFound(false);
       }
       console.error(error)
     })
@@ -62,6 +64,7 @@ function App() {
             <div>
                <input type="text" placeholder="1/43" value={page} onChange={(event) => setPage(event.target.value)}/>
             </div>
+            { found ? 
             <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'stretch', justifyContent: 'center', gap: '24px'}}>
             {data.map((item) => { 
              return(
@@ -70,8 +73,8 @@ function App() {
                 {/* <button onClick={() => {}}>Info</button> */}
               </div>
               )
-           })}
-            </div>
+            })}
+            </div> : <h1>Esta pagina não contém este personagem</h1> }
        </>
       }
      {show === "map" &&
