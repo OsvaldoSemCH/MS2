@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Card } from './components/Card'
 import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
+import { APICard } from './components/APICard'
 import style from './App.module.css'
 import HeaderButtons from './components/HeaderButtons'
 
@@ -65,7 +66,7 @@ function App() {
             {data.map((item) => { 
              return(
               <div key={item.id}>
-                <Card name={item.name} desc={item.species} value={item.gender} image={item.image} />
+                <APICard name={item.name} species={item.species} gender={item.gender} image={item.image} status={item.status} type={item.type}/>
                 {/* <button onClick={() => {}}>Info</button> */}
               </div>
               )
