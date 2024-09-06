@@ -1,11 +1,11 @@
 .Card
 {
     border: 1px solid #00000080;
-    width: 20vw;
+    width: 400px;
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 10px;
