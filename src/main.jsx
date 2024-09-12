@@ -7,11 +7,26 @@ import {
 import Charts from './Charts.jsx'
 import App from './App.jsx'
 import './index.css'
+import Prod from './Prod.jsx';
+import SenaiMap from './Map.jsx';
+import API from './API.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/prod",
+    element: <Prod />,
+  },
+  {
+    path: "/api",
+    element: <API />,
+  },
+  {
+    path: "/map",
+    element: <SenaiMap />,
   },
   {
     path: "/charts",

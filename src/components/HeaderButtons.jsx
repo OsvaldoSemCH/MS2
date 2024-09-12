@@ -4,9 +4,10 @@ export default function HeaderButtons()
 {
     return(
     <div className={style.wrapBtns}>
-        <button onClick={() => setShow("prod")}>Produtos</button>
-        <button onClick={() => setShow("api")}>API</button>
-        <button onClick={() => setShow("map")}>Mapa</button>
+        <a href="/prod"><button>Produtos</button></a>
+        <a href="/api"><button>API</button></a>
+        <a href="/map"><button>Mapa</button></a>
+        <a href='/charts'><button>Gráficos</button></a>
     </div>
     )
 }
