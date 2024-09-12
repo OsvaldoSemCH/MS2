@@ -1,5 +1,5 @@
 import style from './App.module.css'
-import { LineChart, Line } from 'recharts';
+import { LineChart, Line, CartesianGrid, CartesianAxis, XAxis, YAxis, PieChart, Pie, Legend } from 'recharts';
 
 const data = 
 [
@@ -27,9 +27,17 @@ export default function Charts()
         <div className={style.wrapPage}>
             <h1>Exercícios de manutenção</h1>
             <h2>Gráficos</h2>
-            <LineChart width={400} height={400} data={data}>
-                <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-            </LineChart>
+            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
+                <LineChart width={400} height={400} data={data}>
+                    <CartesianGrid strokeDasharray={'3'} fill='#808080' fillOpacity={'0.3'}/>
+                    <XAxis/>
+                    <YAxis/>
+                    <Line dataKey="uv" stroke="#ff4040"/>
+                </LineChart>
+                <PieChart width={400} height={400}>
+                    <Pie data={data} dataKey="uv" fill='#40ff40' fillOpacity={'0.5'} label/>
+                </PieChart>
+            </div>
         </div>
     </>
     );
